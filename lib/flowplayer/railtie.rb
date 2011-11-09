@@ -12,3 +12,7 @@ module Flowplayer
     end
   end
 end
+
+if Rails::VERSION::MAJOR == 3 && Rails::VERSION::MINOR >= 1
+  require 'flowplayer/railties/engine'
+end
