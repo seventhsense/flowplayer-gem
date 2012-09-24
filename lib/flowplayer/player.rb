@@ -17,7 +17,7 @@ module Flowplayer
     end
     
     def script_tags
-      final = library("flowplayer(\"#{dom_id}\", #{swf.to_json}, #{to_js});")
+      final = library("flowplayer(\"#{dom_id}\", #{swf.to_json}, #{to_js}).ipad();")
       <<-EOS
         <script type='text/javascript'>
           //<![CDATA[
