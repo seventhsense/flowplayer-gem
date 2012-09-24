@@ -10,6 +10,7 @@
     <a id='video' style='display:block;width:512px;height:312px;'>
     
   For JQuery
+in erb
 ```Ruby
 <%= flowplayer_for :video, '/flowplayer.swf' do |player|
   player.playlist [{:url => "video_still.jpg"},
@@ -20,6 +21,7 @@
 end%>
 ```
 
+in haml
 ```Ruby
     = flowplayer_for :video, '/flowplayer.swf', 'jquery' do |player|
       - player.playlist [{:url => "video_still.jpg" }, {:url => "video_512x288.flv", :autoPlay => false, :autoBuffering => true }]
@@ -28,7 +30,7 @@ end%>
 ```
 
   For Prototype
-
+in haml
 ```Ruby
     = flowplayer_for :video, '/flowplayer.swf', 'prototype' do |player|
       - player.playlist [{:url => "video_still.jpg" }, {:url => "video_512x288.flv", :autoPlay => false, :autoBuffering => true }]
